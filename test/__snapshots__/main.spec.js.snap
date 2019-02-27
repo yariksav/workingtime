@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`main should be correct openAt results for complex period 1`] = `
+Object {
+  "currentDate": 1899-12-31T19:00:00.000Z,
+  "currentPeriod": Object {
+    "close": Object {
+      "day": 0,
+      "time": "2300",
+    },
+    "indexFrom": "00900",
+    "indexTo": "02300",
+    "open": Object {
+      "day": 0,
+      "time": "0900",
+    },
+  },
+  "isOpen": true,
+  "nextDiff": 10800,
+  "nextEventDate": 1899-12-31T22:00:00.000Z,
+  "nextEventType": "close",
+  "nextPeriod": Object {
+    "close": Object {
+      "day": 2,
+      "time": "0200",
+    },
+    "indexFrom": "10900",
+    "indexTo": "20200",
+    "open": Object {
+      "day": 1,
+      "time": "0900",
+    },
+  },
+}
+`;
+
+exports[`main should be correct openAt results for complex period 2`] = `
+Object {
+  "currentDate": 1899-12-31T23:00:00.000Z,
+  "currentPeriod": undefined,
+  "isOpen": false,
+  "nextDiff": 32400,
+  "nextEventDate": 1900-01-01T08:00:00.000Z,
+  "nextEventType": "open",
+  "nextPeriod": Object {
+    "close": Object {
+      "day": 2,
+      "time": "0200",
+    },
+    "indexFrom": "10900",
+    "indexTo": "20200",
+    "open": Object {
+      "day": 1,
+      "time": "0900",
+    },
+  },
+}
+`;
+
+exports[`main should be correct openAt results for complex period 3`] = `
+Object {
+  "currentDate": 1900-01-06T22:00:00.000Z,
+  "currentPeriod": Object {
+    "close": Object {
+      "day": 0,
+      "time": "0500",
+    },
+    "indexFrom": "60900",
+    "indexTo": "00500",
+    "open": Object {
+      "day": 6,
+      "time": "0900",
+    },
+  },
+  "isOpen": true,
+  "nextDiff": 21600,
+  "nextEventDate": 1900-01-07T04:00:00.000Z,
+  "nextEventType": "close",
+  "nextPeriod": Object {
+    "close": Object {
+      "day": 0,
+      "time": "2300",
+    },
+    "indexFrom": "00900",
+    "indexTo": "02300",
+    "open": Object {
+      "day": 0,
+      "time": "0900",
+    },
+  },
+}
+`;
+
+exports[`main should be correct openAt results for non stop 1`] = `
+Object {
+  "currentDate": 1900-01-02T22:00:00.000Z,
+  "currentPeriod": Object {
+    "indexFrom": "00000",
+    "indexTo": "00000",
+    "open": Object {
+      "day": 0,
+      "time": "0000",
+    },
+  },
+  "isOpen": true,
+  "nextDiff": null,
+  "nextEventDate": null,
+  "nextEventType": "close",
+  "nextPeriod": Object {
+    "indexFrom": "00000",
+    "indexTo": "00000",
+    "open": Object {
+      "day": 0,
+      "time": "0000",
+    },
+  },
+}
+`;
+
+exports[`main should be correct openAt results for none period 1`] = `
+Object {
+  "currentDate": 1900-01-02T22:00:00.000Z,
+  "currentPeriod": undefined,
+  "isOpen": false,
+  "nextDiff": null,
+  "nextEventDate": null,
+  "nextEventType": "open",
+  "nextPeriod": undefined,
+}
+`;
